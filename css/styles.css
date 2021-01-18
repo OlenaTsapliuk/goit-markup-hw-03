@@ -31,9 +31,10 @@ body {
   font-size: 14px;
   font-style: normal;
 }
+/* Утилиты */
 .list {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
@@ -42,6 +43,7 @@ body {
   text-decoration: none;
   font-style: normal;
 }
+/* Header */
 .page-header {
   background-color: var(--primary-white-color);
   margin-bottom: 0%;
@@ -53,6 +55,10 @@ body {
   width: 1200px;
   /* outline: 2px solid rgb(128, 68, 0); */
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /* Логотип  */
 .logo,
 .logo-secondary,
@@ -63,8 +69,14 @@ body {
   line-height: 1.2;
 }
 .logo {
+  display: flex;
+
   color: var(--accent-color);
 }
+/* .logo .link { 
+  display: block;
+   padding-left: 0; 
+} */
 .logo-secondary {
   color: var(--title-text-color);
 }
@@ -98,14 +110,19 @@ body {
 }
 .site-nav {
   display: flex;
-  /* flex-direction: row; */
+  /* flex-direction: row; 
+  margin-left: 93px; */
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
+/* .auth-nav .item { 
+  margin-bottom: 0;
+/* } */
 .auth-nav .item + .item {
   margin-left: 50px;
 }
@@ -204,6 +221,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
+/* Кнопка на главной странице */
 .buttons {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
