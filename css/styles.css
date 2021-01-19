@@ -53,6 +53,9 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
+img{
+  display: block;
+}
 /* Header */
 .page-header {
   background-color: var(--primary-white-color);
@@ -90,10 +93,7 @@ body {
 .page-header .logo {
   display: inline-block;
 }
-/* .logo .link { 
-  display: block;
-   padding-left: 0; 
-} */
+
 .logo-secondary {
   color: var(--title-text-color);
 }
@@ -137,15 +137,15 @@ body {
   display: flex;
   margin-left: auto;
 }
-/* .auth-nav .item { 
-  margin-bottom: 0;
-/* } */
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
 /* Секция  */
-.section {
-  background-color: var(--primary-white-color);
+.section,
+.workers {
+  background-color: var(--primary-white-color); 
+  padding-bottom: 94px; 
 }
 .section-title {
   font-weight: bold;
@@ -161,6 +161,8 @@ body {
 .heroy {
   background-color: var(--footer-heroy-background-color);
   text-align: center;
+  padding-top: 200px; 
+  /* padding-bottom: 200px; */
 }
 .heroy-title {
   font-weight: 900;
@@ -180,8 +182,6 @@ body {
 }
 .features .item {
   width: 270px;
-  
-  margin-bottom: 94px;
 }
 .features .item:not(:last-child){
 margin-right: 30px;
@@ -205,7 +205,6 @@ margin-right: 30px;
 }
 .posters .item {
   width: 370px;
-  margin-bottom: 188px;
 }
 .posters .item:not(:last-child){
   margin-right: 30px;
@@ -214,7 +213,7 @@ margin-right: 30px;
 /* Список работников */
 .workers {
   background-color: var(--background-komandy);
-  margin-bottom: 0;
+  padding-top: 94px;
 }
 .workers-name {
   font-weight: 500;
@@ -233,10 +232,14 @@ margin-right: 30px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  margin-bottom: 30px; 
+  
 }
 .workers-list{
   display: flex;
+  
+}
+.workers-list .item{
+  padding-bottom: 30px;
 }
 .workers-list .item:not(:last-child){
   margin-right: 30px;
@@ -269,10 +272,14 @@ margin-right: 30px;
 .auth-footer{
   display: inline-block;
 }
-.auth-footer .item{
+.auth-footer .item:not(:last-child){
   margin-bottom: 9px;
 }
+.auth-footer .item:last-child{
+  margin-bottom: 60px;
+}
 .address {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: normal;
@@ -299,7 +306,6 @@ margin-right: 30px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
 }
 /* Cтраница Portfolio */
 .portfolio-caption {
