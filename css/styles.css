@@ -147,6 +147,10 @@ img{
   background-color: var(--primary-white-color); 
   padding-bottom: 94px; 
 }
+  .section-top{
+    padding-top: 94px;
+  }
+
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -162,7 +166,7 @@ img{
   background-color: var(--footer-heroy-background-color);
   text-align: center;
   padding-top: 200px; 
-  /* padding-bottom: 200px; */
+  padding-bottom: 200px; 
 }
 .heroy-title {
   font-weight: 900;
@@ -209,7 +213,7 @@ margin-right: 30px;
 .posters .item:not(:last-child){
   margin-right: 30px;
 }
-}
+
 /* Список работников */
 .workers {
   background-color: var(--background-komandy);
@@ -266,6 +270,10 @@ margin-right: 30px;
 .footer {
   background-color: var(--footer-heroy-background-color);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .auth-footer .link {
   color: var(--color-link-footer);
 }
@@ -275,9 +283,7 @@ margin-right: 30px;
 .auth-footer .item:not(:last-child){
   margin-bottom: 9px;
 }
-.auth-footer .item:last-child{
-  margin-bottom: 60px;
-}
+
 .address {
   margin-bottom: 9px;
   color: var(--primary-white-color);
