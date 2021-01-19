@@ -73,6 +73,7 @@ body {
 }
 .menu {
   display: flex;
+  align-items: center;
 }
 /* Логотип  */
 .logo,
@@ -126,8 +127,8 @@ body {
 }
 .site-nav {
   display: flex;
-  /* flex-direction: row; 
-  margin-left: 93px; */
+ 
+  margin-left: 93px; 
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -265,6 +266,12 @@ margin-right: 30px;
 .auth-footer .link {
   color: var(--color-link-footer);
 }
+.auth-footer{
+  display: inline-block;
+}
+.auth-footer .item{
+  margin-bottom: 9px;
+}
 .address {
   color: var(--primary-white-color);
   font-style: normal;
@@ -272,10 +279,10 @@ margin-right: 30px;
   font-size: 14px;
   line-height: 1.7;
 }
+
 /* Кнопка на главной странице */
 .buttons {
-  display: flex;
-  margin-left: 0;
+  margin-left: 700px;
   padding: 10px 32px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -290,7 +297,9 @@ margin-right: 30px;
 }
 .heroy .buttons{
   display: flex;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 /* Cтраница Portfolio */
 .portfolio-caption {
@@ -330,12 +339,27 @@ margin-right: 30px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.portfolio-item-icon {
+.portfolio-icon {
   margin-top: 0;
   margin-bottom: 20px;
 }
 .portfolio {
   display: inline-block;
   margin-top: 0;
+  margin-bottom: 0;
+}
+.portfolio-menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-menu .item{
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-menu .item:nth-child(3n){
+  margin-right: 0;
+}
+.portfolio-menu .item:nth-last-child(-n+3){
   margin-bottom: 0;
 }
