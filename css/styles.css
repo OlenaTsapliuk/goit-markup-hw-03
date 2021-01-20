@@ -61,6 +61,9 @@ img{
   background-color: var(--primary-white-color);
   margin-bottom: 0%;
 }
+.portfolio-header{
+  border-bottom: 1px solid #ECECEC;
+}
 /* Container */
 .container {
   margin-left: auto;
@@ -274,7 +277,10 @@ margin-right: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .logo{
+  display: inline-block;
+  margin-bottom: 20px;
+}
 .auth-footer .link {
   color: var(--color-link-footer);
 }
