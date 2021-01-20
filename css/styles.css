@@ -30,7 +30,7 @@ body {
   color: var(--primary-text-color);
   font-size: 14px;
   font-style: normal;
-  min-width: 1200px;
+  min-width: 1230px;
 }
 /* Утилиты */
 .list {
