@@ -173,7 +173,7 @@ img {
   padding-bottom: 200px;
 }
 .heroy-caption {
-  width: 696px;
+  max-width: 700px;
   margin-right: auto;
   margin-left: auto;
 }
